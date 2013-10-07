@@ -5,5 +5,5 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 # 
-require 'Tickerizer'
+require './lib/tickerizer'
 require 'json'
