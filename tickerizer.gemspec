@@ -12,6 +12,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency "json"
 
   gem.add_development_dependency "rspec"
+  gem.add_development_dependency "rake"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
