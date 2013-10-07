@@ -1,5 +1,5 @@
 language: ruby
-gemfile: spec/Gemfile
+gemfile: Gemfile
 rvm:
   - "1.9.2"
   - "1.9.3"
