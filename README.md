@@ -4,6 +4,7 @@ Use Tickerizer to extract company names and stock symbols from content strings.
 
 [![Build Status](https://travis-ci.org/JimMayes/tickerizer.png?branch=master)](https://travis-ci.org/JimMayes/tickerizer) 
 [![Code Climate](https://codeclimate.com/github/JimMayes/tickerizer.png)](https://codeclimate.com/github/JimMayes/tickerizer)
+[![Gem Version](https://badge.fury.io/rb/tickerizer.png)](http://badge.fury.io/rb/tickerizer)
 
 ## Requirements
 
@@ -48,7 +49,7 @@ companies = Tickerizer.extract(content)
 #=> [{:name=>"Microsoft", :relevance=>0.667, :ticker=>"MSFT", :symbol=>"MSFT.OQ"}, {:name=>"Ford", :relevance=>0.476, :ticker=>"F", :symbol=>"F.N"}]
 ```
 
-Results are ordered by their semantic relevance to the content string. Therefore, it is non-trivial to retrieve a "primary ticker" (most relevant) for the provided content string
+Results are ordered by their semantic relevance to the content string. Therefore, it is trivial to retrieve a "primary ticker" (most relevant) for the provided content string
 
 ```ruby
 companies.first[:ticker]
