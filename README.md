@@ -28,7 +28,7 @@ $ gem install tickerizer
 ```
 
 ## Configuration
-Provide your OenCalais API Key in familiar config block fashion
+Provide your OpenCalais API Key in familiar config block fashion
 ```ruby
 Tickerizer.configure do |config|
 	config.license_id = 'YOUR_API_KEY_HERE'
