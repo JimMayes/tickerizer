@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{Parse content for stock tickers}
   gem.homepage      = ""
 
-  gem.add_dependency "calais"
+  gem.add_dependency "jm-calais"
   gem.add_dependency "json"
 
   gem.add_development_dependency "rspec"
