@@ -1,4 +1,6 @@
 require "tickerizer/version"
+require "json"
+require "calais"
 
 module Tickerizer
 	class Configuration
