@@ -1,6 +1,6 @@
 require "tickerizer/version"
 require "json"
-require "calais"
+require "rest-client"
 
 module Tickerizer
 	class Configuration
@@ -29,12 +29,14 @@ module Tickerizer
 	end
 
 	def self.extract(content)
-		resp = Calais.enlighten(
-			:content => content,
-			:content_type => :raw,
-			:output_format => :json,
-			:license_id => Tickerizer.configuration.license_id
-		)
+		resource = RestClient::Resource.new 'https://api.thomsonreuters.com/permid/calais'
+		opts = {
+			:content_type => "text/plain",
+			:outputformat => "application/json",
+			"X-AG-Access-Token" => Tickerizer.configuration.license_id
+		}
+
+		resp = resource.post content, opts
 
 		self.process( JSON.parse(resp) )
 	end

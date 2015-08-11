@@ -2,13 +2,16 @@
 
 Use Tickerizer to extract company names and stock symbols from content strings.
 
-[![Build Status](https://travis-ci.org/JimMayes/tickerizer.png?branch=master)](https://travis-ci.org/JimMayes/tickerizer) 
+[![Build Status](https://travis-ci.org/JimMayes/tickerizer.png?branch=master)](https://travis-ci.org/JimMayes/tickerizer)
 [![Code Climate](https://codeclimate.com/github/JimMayes/tickerizer.png)](https://codeclimate.com/github/JimMayes/tickerizer)
 [![Gem Version](https://badge.fury.io/rb/tickerizer.png)](http://badge.fury.io/rb/tickerizer)
 
+## Update - version 1.0.0
+This gem has been updated to remove dependency on the open-calais gem and to support the new enhanced Open Calais API.
+
 ## Requirements
 
-An OpenCalais account is required to make use of this gem. Create your account and request an API key at http://www.opencalais.com/APIkey
+An OpenCalais account is required to make use of this gem. Create your account and request an API key at http://new.opencalais.com/opencalais-api/
 
 ## Installation
 
