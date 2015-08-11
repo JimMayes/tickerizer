@@ -4,7 +4,7 @@ require File.expand_path('../lib/tickerizer/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["jimmayes"]
   gem.email         = ["jim.mayes@gmail.com"]
-  gem.description   = %q{Parses content and extras stock tickers for companies mentioned}
+  gem.description   = %q{Parses content and extracts stock tickers for companies mentioned}
   gem.summary       = %q{Parse content for stock tickers}
   gem.homepage      = ""
 
